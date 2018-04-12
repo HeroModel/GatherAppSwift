@@ -13,6 +13,8 @@
 		184B77BE207E099500ED899B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184B77BD207E099500ED899B /* Assets.xcassets */; };
 		184B77C1207E099500ED899B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184B77BF207E099500ED899B /* LaunchScreen.storyboard */; };
 		184B77CC207E099500ED899B /* GatherAppSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B77CB207E099500ED899B /* GatherAppSwiftUITests.swift */; };
+		18A06F2C207F28E400C3F7DB /* GatherPCH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A06F2B207F28E400C3F7DB /* GatherPCH.swift */; };
+		18A06F31207F2D1500C3F7DB /* ObjCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A06F30207F2D1500C3F7DB /* ObjCViewController.m */; };
 		56C741E18A275F80A2C8C676 /* Pods_GatherAppSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B28EA8E51C34221DD70763 /* Pods_GatherAppSwift.framework */; };
 		73167687612341CEC038C913 /* Pods_GatherAppSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B588BE17F14D73E4016561C /* Pods_GatherAppSwiftUITests.framework */; };
 /* End PBXBuildFile section */
@@ -38,6 +40,11 @@
 		184B77C7207E099500ED899B /* GatherAppSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GatherAppSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		184B77CB207E099500ED899B /* GatherAppSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatherAppSwiftUITests.swift; sourceTree = "<group>"; };
 		184B77CD207E099500ED899B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18A06F2B207F28E400C3F7DB /* GatherPCH.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatherPCH.swift; sourceTree = "<group>"; };
+		18A06F2D207F2A6E00C3F7DB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		18A06F2E207F2AD000C3F7DB /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		18A06F2F207F2D1500C3F7DB /* ObjCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCViewController.h; sourceTree = "<group>"; };
+		18A06F30207F2D1500C3F7DB /* ObjCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCViewController.m; sourceTree = "<group>"; };
 		1B588BE17F14D73E4016561C /* Pods_GatherAppSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GatherAppSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A943B8F225CF7C1A172098 /* Pods-GatherAppSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GatherAppSwiftUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GatherAppSwiftUITests/Pods-GatherAppSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2EDA0129080EDA251DAA311E /* Pods-GatherAppSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GatherAppSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GatherAppSwift/Pods-GatherAppSwift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -89,12 +96,11 @@
 		184B77B5207E099300ED899B /* GatherAppSwift */ = {
 			isa = PBXGroup;
 			children = (
-				184B77B6207E099300ED899B /* AppDelegate.swift */,
-				184B77B8207E099300ED899B /* ViewController.swift */,
-				184B77BA207E099300ED899B /* Main.storyboard */,
-				184B77BD207E099500ED899B /* Assets.xcassets */,
-				184B77BF207E099500ED899B /* LaunchScreen.storyboard */,
-				184B77C2207E099500ED899B /* Info.plist */,
+				18FBD2F8207F39960094DD3B /* Main */,
+				18FBD2F7207F39880094DD3B /* Swift */,
+				18A06F36207F2F7400C3F7DB /* NetworkTool */,
+				18A06F34207F2D6F00C3F7DB /* Other */,
+				18A06F33207F2D5200C3F7DB /* ObjectC */,
 			);
 			path = GatherAppSwift;
 			sourceTree = "<group>";
@@ -106,6 +112,76 @@
 				184B77CD207E099500ED899B /* Info.plist */,
 			);
 			path = GatherAppSwiftUITests;
+			sourceTree = "<group>";
+		};
+		18A06F33207F2D5200C3F7DB /* ObjectC */ = {
+			isa = PBXGroup;
+			children = (
+				18A06F2F207F2D1500C3F7DB /* ObjCViewController.h */,
+				18A06F30207F2D1500C3F7DB /* ObjCViewController.m */,
+			);
+			path = ObjectC;
+			sourceTree = "<group>";
+		};
+		18A06F34207F2D6F00C3F7DB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				18A06F2B207F28E400C3F7DB /* GatherPCH.swift */,
+				18A06F2D207F2A6E00C3F7DB /* PrefixHeader.pch */,
+				18A06F2E207F2AD000C3F7DB /* Header.h */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		18A06F36207F2F7400C3F7DB /* NetworkTool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkTool;
+			sourceTree = "<group>";
+		};
+		18FBD2F7207F39880094DD3B /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				18FBD2FB207F39D70094DD3B /* C */,
+				18FBD2FA207F39D10094DD3B /* V */,
+				18FBD2F9207F39C90094DD3B /* M */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		18FBD2F8207F39960094DD3B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				184B77B6207E099300ED899B /* AppDelegate.swift */,
+				184B77B8207E099300ED899B /* ViewController.swift */,
+				184B77BA207E099300ED899B /* Main.storyboard */,
+				184B77BD207E099500ED899B /* Assets.xcassets */,
+				184B77BF207E099500ED899B /* LaunchScreen.storyboard */,
+				184B77C2207E099500ED899B /* Info.plist */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		18FBD2F9207F39C90094DD3B /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		18FBD2FA207F39D10094DD3B /* V */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		18FBD2FB207F39D70094DD3B /* C */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = C;
 			sourceTree = "<group>";
 		};
 		A023DBADD64ED814E9E11398 /* Pods */ = {
@@ -337,7 +413,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A06F31207F2D1500C3F7DB /* ObjCViewController.m in Sources */,
 				184B77B9207E099300ED899B /* ViewController.swift in Sources */,
+				18A06F2C207F28E400C3F7DB /* GatherPCH.swift in Sources */,
 				184B77B7207E099300ED899B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,12 +577,19 @@
 			baseConfigurationReference = 2EDA0129080EDA251DAA311E /* Pods-GatherAppSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W484MABT73;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GatherAppSwift/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = GatherAppSwift/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.youhu.net.GatherAppSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/GatherAppSwift/Other/Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -515,12 +600,19 @@
 			baseConfigurationReference = 7F73236CA89E5B5F2446CEDA /* Pods-GatherAppSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W484MABT73;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GatherAppSwift/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = GatherAppSwift/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.youhu.net.GatherAppSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/GatherAppSwift/Other/Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -534,7 +626,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W484MABT73;
 				INFOPLIST_FILE = GatherAppSwiftUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.youhu.net.GatherAppSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -551,7 +647,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W484MABT73;
 				INFOPLIST_FILE = GatherAppSwiftUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.youhu.net.GatherAppSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

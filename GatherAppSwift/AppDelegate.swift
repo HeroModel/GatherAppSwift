@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.makeKeyAndVisible()
         let vc = ViewController()
         self.window?.rootViewController = UINavigationController(rootViewController: vc)
-        
+        Thread.sleep(forTimeInterval: 1.5)
         return true
     }
 

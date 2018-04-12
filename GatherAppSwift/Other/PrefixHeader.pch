@@ -1,0 +1,23 @@
+//
+//  PrefixHeader.pch
+//  GatherAppSwift
+//
+//  Created by apple on 2018/4/12.
+//  Copyright © 2018年 Apple. All rights reserved.
+//
+//PCH步骤
+//1.Command+N，打开新建文件窗口：ios->other->PCH file，创建一个pch文件
+//2.在工程的TARGETS里边Building Setting中搜索Prefix Header，然后把Precompile Prefix Header右边的NO改为Yes：
+//3.添加pch文件路径。添加格式：“$(SRCROOT)/项目名称/pch文件名” ，$(SRCROOT)的意思就是工程根目录的意思
+//$(SRCROOT)/GatherAppSwift/Other/PrefixHeader.pch
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#define StringText @"你好"
+
+
+#endif /* PrefixHeader_pch */
