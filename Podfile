@@ -6,7 +6,11 @@ target 'GatherAppSwift' do
   use_frameworks!
 
   # Pods for GatherAppSwift
+  # 网络请求
     pod 'Alamofire'
+  # 基于Alamofire的封装
+    pod 'Moya'
+    pod 'Moya/RxSwift'
   target 'GatherAppSwiftUITests' do
     inherit! :search_paths
     # Pods for testing
