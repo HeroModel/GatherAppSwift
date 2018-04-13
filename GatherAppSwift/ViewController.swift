@@ -7,9 +7,10 @@
 //
 
 import UIKit
-
-
+import RxSwift
 class ViewController: UIViewController {
+    let disposeBag = DisposeBag()
+    let viewModel = ViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,11 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func getDate()  {
+        
+        
     }
     func createView(){
         
