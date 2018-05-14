@@ -13,10 +13,6 @@
 		184B77BE207E099500ED899B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184B77BD207E099500ED899B /* Assets.xcassets */; };
 		184B77C1207E099500ED899B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184B77BF207E099500ED899B /* LaunchScreen.storyboard */; };
 		184B77CC207E099500ED899B /* GatherAppSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B77CB207E099500ED899B /* GatherAppSwiftUITests.swift */; };
-		18991CA420809A5600710EB7 /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18991CA320809A5600710EB7 /* NetworkTool.swift */; };
-		18991CAB2080A6B100710EB7 /* Observable+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18991CA92080A6B100710EB7 /* Observable+ObjectMapper.swift */; };
-		18991CAC2080A6B100710EB7 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18991CAA2080A6B100710EB7 /* Post.swift */; };
-		18991CAE2080A80000710EB7 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18991CAD2080A7FF00710EB7 /* ViewModel.swift */; };
 		18A06F2C207F28E400C3F7DB /* GatherPCH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A06F2B207F28E400C3F7DB /* GatherPCH.swift */; };
 		18A06F31207F2D1500C3F7DB /* ObjCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A06F30207F2D1500C3F7DB /* ObjCViewController.m */; };
 		56C741E18A275F80A2C8C676 /* Pods_GatherAppSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B28EA8E51C34221DD70763 /* Pods_GatherAppSwift.framework */; };
@@ -44,10 +40,6 @@
 		184B77C7207E099500ED899B /* GatherAppSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GatherAppSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		184B77CB207E099500ED899B /* GatherAppSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatherAppSwiftUITests.swift; sourceTree = "<group>"; };
 		184B77CD207E099500ED899B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18991CA320809A5600710EB7 /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
-		18991CA92080A6B100710EB7 /* Observable+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+ObjectMapper.swift"; sourceTree = "<group>"; };
-		18991CAA2080A6B100710EB7 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		18991CAD2080A7FF00710EB7 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		18A06F2B207F28E400C3F7DB /* GatherPCH.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatherPCH.swift; sourceTree = "<group>"; };
 		18A06F2D207F2A6E00C3F7DB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		18A06F2E207F2AD000C3F7DB /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
@@ -144,10 +136,6 @@
 		18A06F36207F2F7400C3F7DB /* NetworkTool */ = {
 			isa = PBXGroup;
 			children = (
-				18991CA320809A5600710EB7 /* NetworkTool.swift */,
-				18991CA92080A6B100710EB7 /* Observable+ObjectMapper.swift */,
-				18991CAA2080A6B100710EB7 /* Post.swift */,
-				18991CAD2080A7FF00710EB7 /* ViewModel.swift */,
 			);
 			path = NetworkTool;
 			sourceTree = "<group>";
@@ -435,14 +423,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18991CAB2080A6B100710EB7 /* Observable+ObjectMapper.swift in Sources */,
 				18A06F31207F2D1500C3F7DB /* ObjCViewController.m in Sources */,
 				184B77B9207E099300ED899B /* ViewController.swift in Sources */,
 				18A06F2C207F28E400C3F7DB /* GatherPCH.swift in Sources */,
 				184B77B7207E099300ED899B /* AppDelegate.swift in Sources */,
-				18991CAC2080A6B100710EB7 /* Post.swift in Sources */,
-				18991CAE2080A80000710EB7 /* ViewModel.swift in Sources */,
-				18991CA420809A5600710EB7 /* NetworkTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
