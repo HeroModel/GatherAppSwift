@@ -13,6 +13,8 @@
 		184B77BE207E099500ED899B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184B77BD207E099500ED899B /* Assets.xcassets */; };
 		184B77C1207E099500ED899B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184B77BF207E099500ED899B /* LaunchScreen.storyboard */; };
 		184B77CC207E099500ED899B /* GatherAppSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B77CB207E099500ED899B /* GatherAppSwiftUITests.swift */; };
+		186B0B7920AEBA28001A54C4 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186B0B7820AEBA28001A54C4 /* API.swift */; };
+		186B0B7B20AEBEED001A54C4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186B0B7A20AEBEED001A54C4 /* NetworkManager.swift */; };
 		18A06F2C207F28E400C3F7DB /* GatherPCH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A06F2B207F28E400C3F7DB /* GatherPCH.swift */; };
 		18A06F31207F2D1500C3F7DB /* ObjCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A06F30207F2D1500C3F7DB /* ObjCViewController.m */; };
 		56C741E18A275F80A2C8C676 /* Pods_GatherAppSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B28EA8E51C34221DD70763 /* Pods_GatherAppSwift.framework */; };
@@ -40,6 +42,8 @@
 		184B77C7207E099500ED899B /* GatherAppSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GatherAppSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		184B77CB207E099500ED899B /* GatherAppSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatherAppSwiftUITests.swift; sourceTree = "<group>"; };
 		184B77CD207E099500ED899B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		186B0B7820AEBA28001A54C4 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		186B0B7A20AEBEED001A54C4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		18A06F2B207F28E400C3F7DB /* GatherPCH.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatherPCH.swift; sourceTree = "<group>"; };
 		18A06F2D207F2A6E00C3F7DB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		18A06F2E207F2AD000C3F7DB /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
@@ -136,6 +140,8 @@
 		18A06F36207F2F7400C3F7DB /* NetworkTool */ = {
 			isa = PBXGroup;
 			children = (
+				186B0B7820AEBA28001A54C4 /* API.swift */,
+				186B0B7A20AEBEED001A54C4 /* NetworkManager.swift */,
 			);
 			path = NetworkTool;
 			sourceTree = "<group>";
@@ -353,6 +359,7 @@
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -362,6 +369,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -423,10 +431,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				186B0B7B20AEBEED001A54C4 /* NetworkManager.swift in Sources */,
 				18A06F31207F2D1500C3F7DB /* ObjCViewController.m in Sources */,
 				184B77B9207E099300ED899B /* ViewController.swift in Sources */,
 				18A06F2C207F28E400C3F7DB /* GatherPCH.swift in Sources */,
 				184B77B7207E099300ED899B /* AppDelegate.swift in Sources */,
+				186B0B7920AEBA28001A54C4 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

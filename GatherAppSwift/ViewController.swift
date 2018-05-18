@@ -8,6 +8,7 @@
 
 import UIKit
 import RxSwift
+import Moya
 class ViewController: UIViewController {
     let disposeBag = DisposeBag()
 
@@ -18,6 +19,7 @@ class ViewController: UIViewController {
         self.navigationController?.navigationBar.isTranslucent = false
         
         self.createView()
+        self.getDate()
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,8 +28,11 @@ class ViewController: UIViewController {
     }
     
     func getDate()  {
+        let provider = MoyaProvider<Joke>()
         
-        
+        provider.request(Joke.Image(count: 1, page: 1)) { (result) -> () in
+            print(result)
+        }
     }
     func createView(){
         

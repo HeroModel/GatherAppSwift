@@ -17,6 +17,8 @@ target 'GatherAppSwift' do
     pod 'Moya/RxSwift'
   # ObjectMapper是一个基于Swift语言开发的能够让JSON与Object之间轻松转换的类库
     pod 'ObjectMapper'
+  # 在Swift中处理JSON数据的更好方法
+    pod 'SwiftyJSON'
   target 'GatherAppSwiftUITests' do
     inherit! :search_paths
     # Pods for testing
