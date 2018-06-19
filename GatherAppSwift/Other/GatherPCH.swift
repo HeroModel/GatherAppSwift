@@ -8,7 +8,7 @@
 
 import UIKit
 
-let kTestPCH = "测试Swift_PCH"
+let kTestPCH = "测试Swift_PCH_提交"
 let SCREEN_WIDTH = UIScreen.main.bounds.size.width
 let SCREEN_HEIGHT = UIScreen.main.bounds.size.height
 
